@@ -9,5 +9,6 @@ namespace ITEC.Objects
     {
         public string s { get; set; } //local measurement time
         public string tz { get; set; } //timezone
+        public string v { get; set; } //id
     }
 }

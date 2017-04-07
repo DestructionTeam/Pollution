@@ -156,11 +156,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Objects\Attributions.cs" />
+    <Compile Include="Objects\Attribution.cs" />
     <Compile Include="Objects\City.cs" />
     <Compile Include="Objects\Data.cs" />
+    <Compile Include="Objects\Iaqi.cs" />
     <Compile Include="Objects\Response.cs" />
     <Compile Include="Objects\Time.cs" />
+    <Compile Include="Objects\Value.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using ITEC.Code;
 using ITEC.Objects;
+using WebGrease;
 
 namespace ITEC.Controllers
 {
@@ -31,8 +32,8 @@ namespace ITEC.Controllers
             {
                 var json = wc.DownloadString(URL);
                 Response myResponse = DataSerializer.GetResponse(json);
+                ViewBag.Message = json;
 
-                ViewBag.Message = json.ToString();
             }
             return View();
         }

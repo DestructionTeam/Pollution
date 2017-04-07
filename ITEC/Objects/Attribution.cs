@@ -5,8 +5,9 @@ using System.Web;
 
 namespace ITEC.Objects
 {
-    public class Attributions
+    public class Attribution
     {
-
+        public string url { get; set; }
+        public string name { get; set; }
     }
 }
