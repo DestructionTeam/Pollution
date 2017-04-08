@@ -1,0 +1,44 @@
+﻿@model ITEC.Objects.SearchData
+
+@{
+    string tobewritten = "";
+    string color = "";
+    double aqi = Model.getAqi();
+    if (aqi < 0)
+    {
+        tobewritten = "No data available!";
+        color = "black";
+    }
+    else
+    {
+        if (aqi <= 50.0)
+        {
+            color = "green";
+        }
+        else if (aqi > 50.0 && aqi <= 100.0)
+        {
+            color = "yellow";
+        }
+        else if (aqi > 100.0 && aqi <= 150.0)
+        {
+            color = "orange";
+        }
+        else if (aqi > 150.0 && aqi <= 200.0)
+        {
+            color = "pink";
+        }
+        else if (aqi > 200.0 && aqi <= 250.0)
+        {
+            color = "red";
+        }
+        else if (aqi > 250 && aqi < 300)
+        {
+            color = "purple";
+        }
+        else
+        {
+            color = "brown";
+        }
+
+    }
+}

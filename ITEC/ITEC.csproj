@@ -151,7 +151,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Code\DataSerializer.cs" />
+    <Compile Include="Code\CarProcessing.cs" />
+    <Compile Include="Code\Queries.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -161,6 +162,9 @@
     <Compile Include="Objects\Data.cs" />
     <Compile Include="Objects\Iaqi.cs" />
     <Compile Include="Objects\Response.cs" />
+    <Compile Include="Objects\SearchData.cs" />
+    <Compile Include="Objects\SearchResponse.cs" />
+    <Compile Include="Objects\Station.cs" />
     <Compile Include="Objects\Time.cs" />
     <Compile Include="Objects\Value.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -170,6 +174,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\cerulean-bootstrap.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -186,6 +191,22 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="ITEC\10.jpg" />
+    <Content Include="ITEC\gif.gif" />
+    <Content Include="ITEC\logo.png" />
+    <Content Include="ITEC\logo1.png" />
+    <Content Include="ITEC\poz.png" />
+    <Content Include="ITEC\poz1.png" />
+    <Content Include="ITEC\slika1.jpg" />
+    <Content Include="ITEC\slika2.jpg" />
+    <Content Include="ITEC\slika3.jpg" />
+    <Content Include="ITEC\slika4.jpg" />
+    <Content Include="ITEC\slika5.jpg" />
+    <Content Include="ITEC\slika6.jpg" />
+    <Content Include="ITEC\slika7.jpg" />
+    <Content Include="ITEC\slika8.jpg" />
+    <Content Include="ITEC\tetovo.jpg" />
+    <Content Include="ITEC\veles.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -216,10 +237,10 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Data.cshtml" />
+    <Content Include="Views\Home\Contribution.cshtml" />
+    <Content Include="Views\Home\Risks.cshtml" />
+    <Content Include="Views\Home\Result.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
