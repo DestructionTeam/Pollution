@@ -1,7 +1,113 @@
-﻿<div class="img-responsive"></div>
+﻿
 @{
     ViewBag.Title = "Risks";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<div class="img-responsive">
+    <div class="jumbotron">
+        <h2>Formula to calculate the Estimated Health Risk...</h2>
+        <h1>Health Risk = Hazard * Expousure</h1>
+            <blockquote><h3> A danger or risk..<footer>Hazard</footer></h3></blockquote>
+        <blockquote><h3>State of having no protection from something harmful..
+            <footer>Expousure</footer></h3></blockquote>
+        <p><a style="float:right" href="https://www3.epa.gov/airtoxics/3_90_022.html" target="_blank" class="btn btn-info">Learn more about Healt Risk &raquo;</a></p>
+    </div>
+    <div class="jumbotron">
+        <div class="row">
+            <h1 style="text-align:center">4 Effects of Air Pollution!</h1>
+            <div class="col-md-3" style="text-align:justify">
+                <p>
+                    <h2>*Acidification</h2>Chemical reactions involving air pollutants can create acidic
+                    compounds which can cause harm to vegetation and buildings.
+                    Sometimes, when an air pollutant, such as sulfuric acid combines with the water droplets that make up clouds,
+                    the water droplets become acidic, forming acid rain.
+                </p>
+            </div>
+            <div class="col-md-3" style="text-align:justify">
+                <p>
+                    <h2>*Eutrophication</h2>Rain can carry and deposit the Nitrogen in some pollutants on rivers and soils.
+                    This will adversely affect the nutrients in the soil and water bodies.
+                    This can result in algae growth in lakes and water bodies, and make conditions for other living
+                    organism harmful.
+                </p>
+            </div>
+            <div class="col-md-3" style="text-align:justify">
+                <p>
+                    <h2>*Ground-level ozone</h2>Chemical reactions involving air pollutants create a poisonous gas ozone (O3).
+                    Gas Ozone can affect people’s health and can damage vegetation types and some animal life too.
+                </p>
+            </div>
+            <div class="col-md-3" style="text-align:justify">
+                <p>
+                    <h2>*Particulate matter</h2>Air pollutants can be in the form of particulate matter which can be very harmful to our health.
+                    The level of effect usually depends on the length of time of exposure,
+                    as well the kind and concentration of chemicals and particles exposed to.
+                </p>
+            </div>
+        </div>
+        <p><a style="float:right" href="http://eschooltoday.com/pollution/air-pollution/effects-of-air-pollution.html" target="_blank" class="btn btn-info">Learn more about Effects of Air Pollution &raquo;</a></p>
+    </div>
+    <div class="container" style="display:block;width:80%;height:330px;overflow:hidden;">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="/ITEC/slika2.jpg" alt="Chania" width="460" height="345">
+                </div>
+
+                <div class="item">
+                    <img src="/ITEC/slika6.jpg" alt="Chania" width="460" height="345">
+                </div>
+
+                <div class="item">
+                    <img src="/ITEC/slika8.jpg" alt="Flower" width="460" height="345">
+                </div>
+
+                <div class="item">
+                    <img src="/ITEC/10.jpg" alt="Flower" width="460" height="345">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+
+
 </div>
+<style>
+    body{
+         background: linear-gradient(#000033,#0000CC,#CCCCFF); /* Standard syntax */
+    }
+    .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+
+  }
+    .carousel-custom .carousel-outer {
+  position: relative;
+}
+    h3{
+        font-size:20px;
+    }
+
+</style>

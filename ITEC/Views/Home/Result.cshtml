@@ -2,43 +2,59 @@
 
 @{
     string tobewritten = "";
-    string color = "";
+    int value = 0;
+    string color;
+    string message = "";
     double aqi = Model.getAqi();
     if (aqi < 0)
     {
-        tobewritten = "No data available!";
-        color = "black";
+        value = 0;
+    }
+    else if (aqi > 300)
+    {
+        value = 1;
     }
     else
     {
-        if (aqi <= 50.0)
-        {
-            color = "green";
-        }
-        else if (aqi > 50.0 && aqi <= 100.0)
-        {
-            color = "yellow";
-        }
-        else if (aqi > 100.0 && aqi <= 150.0)
-        {
-            color = "orange";
-        }
-        else if (aqi > 150.0 && aqi <= 200.0)
-        {
-            color = "pink";
-        }
-        else if (aqi > 200.0 && aqi <= 250.0)
-        {
-            color = "red";
-        }
-        else if (aqi > 250 && aqi < 300)
-        {
-            color = "purple";
-        }
-        else
-        {
-            color = "brown";
-        }
-
+        value = (int)aqi/3;
     }
+
+    if (value <= 20)
+    {
+        color = "green";
+        message += "    Condition: Perfectly safe!";
+    }
+    else if (value > 20 && value <= 50)
+    {
+        color = "yellow";
+        message = "     Condition: Not safe for people with lung problems!";
+    }
+    else if (value > 50 && value <= 75)
+    {
+        color = "orange";
+        message = "     Condition: Avoid staying outside for prolonged periods!";
+    }
+    else
+    {
+        color = "red";
+        message = "     Condition: Very dangerous, stay at home!";
+    }
+
 }
+
+
+<div style="background-color: @color; padding-top: 10px" class="col-md-6" >
+    <h6 style="color:black">
+                @Model.station.name
+            </h6>
+
+</div>
+<div style="background-color: @color; padding-top: 10px" class="col-md-6">
+
+            <h6 style="color:black">
+                @message
+            </h6>
+</div>
+
+
+

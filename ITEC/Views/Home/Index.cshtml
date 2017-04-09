@@ -12,30 +12,32 @@
     </div>
 </div>
 
-    <div class="row">
-        <div class="col-md-4">
-            <h2 style="text-align:center;color:#333333">Skopje</h2>
-            <a href='@Url.Action("Search","Home",new { city = "Skopje"})'><img src="/ITEC/slika7.jpg" class="img-responsive"/></a>
-        </div>
-        <div class="col-md-4">
-            <h2 style="text-align:center;color:#333333">Veles</h2>
-            <a href='@Url.Action("Search","Home",new { city = "Veles-2"})'><img src="/ITEC/Veles.jpg" class="img-responsive" alt="" /></a>
-        </div>
-        <div class="col-md-4">
-            <h2 style="text-align:center;color:#333333">Tetovo</h2>
-            <a href='@Url.Action("Search","Home",new { city = "Tetovo,Macedonia"})'><img src="/ITEC/tetovo.jpg" class="img-responsive" alt="" /></a>
-        </div>
+<div class="row">
+    <div class="col-md-4">
+        <h2 style="text-align: center; color: #333333">Skopje</h2>
+        <a href='@Url.Action("Search", "Home", new {city = "Skopje"})'><img src="/ITEC/slika7.jpg" class="img-responsive"/></a>
     </div>
-<div>
-
-    @foreach (var item in Model)
-    {
-        <div>
-            @Html.Partial("Result", item)
-        </div>   
-    }
-   
+    <div class="col-md-4">
+        <h2 style="text-align: center; color: #333333">Veles</h2>
+        <a href='@Url.Action("Search", "Home", new {city = "Veles-2"})'><img src="/ITEC/Veles.jpg" class="img-responsive" alt=""/></a>
+    </div>
+    <div class="col-md-4">
+        <h2 style="text-align: center; color: #333333">Tetovo</h2>
+        <a href='@Url.Action("Search", "Home", new {city = "Tetovo,Macedonia"})'><img src="/ITEC/tetovo.jpg" class="img-responsive" alt=""/></a>
+    </div>
 </div>
+<div style="padding-top:10px">
+
+
+            @foreach (var item in Model)
+            {
+                <div class="row">
+                    @Html.Partial("Result", item)
+                </div>
+            }
+    
+</div>
+
 
 
 

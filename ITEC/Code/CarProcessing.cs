@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using ITEC.Objects;
 
 namespace ITEC.Code
 {
     public class CarProcessing
     {
-        public static double Impact(string fueltype, double consumption, double kilometers)
+        public static double Impact(CarConsumption car)
         {
             double fuelemission;
-            switch (fueltype.Trim().ToLowerInvariant())
+            switch (car.FuelType.Trim().ToLowerInvariant())
             {
                 case "diesel":
                     fuelemission = 26.5;
@@ -18,13 +19,13 @@ namespace ITEC.Code
                 case "petrol":
                     fuelemission = 23.2;
                     break;
-                case "autogas":
+                case "gas":
                     fuelemission = 19.0;
                     break;
                 default:
                     return -1.0;
             }
-            double impact = fuelemission*consumption*kilometers;
+            double impact = (fuelemission*car.Consumption*car.Km)/100.0;
             return impact;
         }
     }

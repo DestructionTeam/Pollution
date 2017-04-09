@@ -158,6 +158,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Objects\Attribution.cs" />
+    <Compile Include="Objects\CarConsumption.cs" />
     <Compile Include="Objects\City.cs" />
     <Compile Include="Objects\Data.cs" />
     <Compile Include="Objects\Iaqi.cs" />
@@ -223,6 +224,8 @@
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\waterbubble.js" />
+    <Content Include="Scripts\waterbubble.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
